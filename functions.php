@@ -33,7 +33,8 @@
 
     function cp_registro_menus(){
         register_nav_menus(array( 
-            'header-menu' => __('Header Menu', 'Codelapps') // Main Navigation
+            'header-menu' => __('Header Menu', 'Codelapps'), // Main Navigation
+            'acces-menu' => __('Accesos directos','Codelapps') // menu de accesos directos
         ));
     }
 

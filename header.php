@@ -11,19 +11,16 @@
     </head>
     <body>
     <div class="contenedor">
+        
         <div class="overlay"></div>
+
         <header class='header-principal'>
-            <ul class='acces-navmenu'>
-                <li class="navBtn">
-                    <i class="fa fa-plus fa-2x"></i>
-                </li>
-                <li><i class="fas fa-briefcase fa-2x"></i></li>
-                <li><i class="fa fa-rocket fa-2x"></i></li>
-                <li><i class="fa fa-desktop fa-2x"></i></li>
-                <li>
-                    <i class="fas fa-info-circle fa-2x"></i>
-                </li>
-            </ul>
+
+            <!-- BOTON PARA NAVEGACION COMPLETA -->
+            <div class="navBtn">
+                <i class="fas fa-plus-circle fa-2x"></i>
+            </div>
+            <!-- MENU DE ACCESOS DIRECTOS -->
             <?php
                 // argumentos para desplegar el menu
                 $args= array(
@@ -35,26 +32,18 @@
                 // imprime el menu
                 wp_nav_menu($args);
             ?>
+            <!-- MENU COMPLETO -->
+            <?php
+                // argumentos para desplegar el menu
+                $args= array(
+                    "theme_location"=> "acces-menu",
+                    "container"=> "div",
+                    "container_class"=>"acces-navmenu"
+                );
+
+                // imprime el menu
+                wp_nav_menu($args);
+            ?>
         </header>
-        <div class="main"> 
-            <article>
-
-         
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-        
-                        
-            </article>
-
-            
-        </div>
-    </div>
+        <!-- SECCION PARA EL CONTENIDO PRINCIPAL -->
+        <section class="main"> 
