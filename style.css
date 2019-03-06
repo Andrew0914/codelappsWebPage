@@ -48,8 +48,8 @@ Text Domain: http://www.codelapps.com
 html,
 body {
     width: 100%;
-    height: 100%;
-    background-color: #540355;
+    /* background-image:to bottom #540355; */
+    background-image: linear-gradient(to bottom, #d00cd3, #540355);
 }
 
 .contenedor {

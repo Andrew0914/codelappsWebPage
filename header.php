@@ -46,4 +46,4 @@
             ?>
         </header>
         <!-- SECCION PARA EL CONTENIDO PRINCIPAL -->
-        <section class="main"> 
+        <section class="main">  
