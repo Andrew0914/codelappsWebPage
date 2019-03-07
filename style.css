@@ -217,3 +217,7 @@ nav.nav-principal ul li a {
     color: #5e025f;
     font-weight: 600;
 }
+
+.enlace-rojo {
+    color: rgb(112, 0, 0);
+}

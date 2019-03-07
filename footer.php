@@ -9,7 +9,9 @@
                 </div>
                 <!-- PREVIEW DEVELOPER -->
                 <div class="col l4 m12 s12">
-                    
+                <?php
+                    get_template_part( 'content/part' , 'ultimoDeveloper');
+                ?>
                 </div>
                 <!-- PREVIRE PORTAFOLIO -->
                 <div class="col l4 m12 s12">

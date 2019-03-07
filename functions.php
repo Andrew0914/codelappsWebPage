@@ -46,7 +46,7 @@
      * Modificacion para el excerpt general
      */
     function cp_excerpt( $excerpt ){
-        return substr(get_the_content(), 0, 200) . "...";
+        return substr(get_the_content(), 0, 300) . "...";
     }
     
     add_filter( 'the_excerpt', 'cp_excerpt', 10, 1 );
@@ -100,4 +100,45 @@
     }
 
     add_action('after_setup_theme','cp_setup');
+
+    /**
+     * Registra el tipo de post para las publicaciones de developer
+     */
+    function cp_posts_code() {
+        register_taxonomy_for_object_type('category', 'code'); 
+        register_taxonomy_for_object_type('post_tag', 'code');
+        register_post_type('code', 
+            array(
+            'labels' => array(
+                'name' => __('Developer', 'Codelapps'), 
+                'singular_name' => __('code', 'Codelapps'),
+                'add_new' => __('Agregar Nuevo', 'Codelapps'),
+                'add_new_item' => __('Agregar Nuevo code', 'Codelapps'),
+                'edit' => __('Edit', 'Codelapps'),
+                'edit_item' => __('Editar code', 'Codelapps'),
+                'new_item' => __('Nuevo code', 'Codelapps'),
+                'view' => __('Ver Developer', 'Codelapps'),
+                'view_item' => __('Ver code', 'Codelapps'),
+                'search_items' => __('Buscar codes', 'Codelapps'),
+                'not_found' => __('No se encontraron codes', 'Codelapps'),
+                'not_found_in_trash' => __('No hay codes en la papelera', 'Codelapps')
+            ),
+            'public' => true,
+            'menu_icon' => get_template_directory_uri() . "/images/launch.png",
+            'hierarchical' => true, 
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail'
+            ), 
+            'can_export' => true, 
+            'taxonomies' => array(
+                'post_tag','category'
+            ) 
+        ));
+        
+    }
+
+    add_action('init', 'cp_posts_code');
 ?>
