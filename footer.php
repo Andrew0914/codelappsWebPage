@@ -1,33 +1,24 @@
-        
-
+        <!-- FOOTER PRINCIPAL DEL SITIO -->
         <footer class="page-footer amber darken-4">
             <div class="row">
-                <div class="col s4">
-                    <h5 class="white-text">
-                        Acerca de 
-                    </h5>
-                    <!-- excerp de acerca de-->
-                    <aside class="grey-text text-lighten-4">
-                        <?php 
-							$acercade = new WP_Query('page_id=19');
-							while($acercade->have_posts()): $acercade->the_post();
-                                the_excerpt();
-                        ?>
-                        <br>
-                        <a class="waves-effect waves-light btn purple darken-4" href="<?php the_permalink(); ?>">Saber más</a>
-                        <?php
-							endwhile; 
-							wp_reset_postdata();
-						?>
-                    </aside>
+                <!-- PREVIEW ACERCA DE -->
+                <div class="col l4 m12 s12">
+                    <?php
+                        get_template_part( 'content/part' , 'miniAcercaDe');
+                    ?>
                 </div>
-                <div class="col s4">
-                    <h5 class="white-text">Lo último developer</h5>
+                <!-- PREVIEW DEVELOPER -->
+                <div class="col l4 m12 s12">
+                    
                 </div>
-                <div class="col s4">
-                    <h5 class="white-text">Mis últimos trabajos</h5>
+                <!-- PREVIRE PORTAFOLIO -->
+                <div class="col l4 m12 s12">
+                    <?php
+                        get_template_part( 'content/part' , 'ultimoTrabajo');
+                    ?>
                 </div>
             </div>
+            <!-- COPYRIGHT Y ENLACES DE INTERES -->
             <div class="row footer-copyright">
                 <div class="col s12">
                     © 2019 Copyright Andrew Alan Gonzalez
@@ -38,6 +29,7 @@
             </div>
             <?php wp_footer(); ?>
         </footer>
+        
 
         </section>
     </body>

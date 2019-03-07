@@ -42,9 +42,62 @@
 
     add_action('init', 'cp_registro_menus');
 
+    /**
+     * Modificacion para el excerpt general
+     */
     function cp_excerpt( $excerpt ){
         return substr(get_the_content(), 0, 200) . "...";
     }
     
     add_filter( 'the_excerpt', 'cp_excerpt', 10, 1 );
+
+    /**
+     * Registra el tipo de post para los trabajos en el portafolio
+     */
+    function cp_posts_trabajo() {
+        register_taxonomy_for_object_type('category', 'trabajo'); 
+        register_taxonomy_for_object_type('post_tag', 'trabajo');
+        register_post_type('trabajo', 
+            array(
+            'labels' => array(
+                'name' => __('Portafolio', 'Codelapps'), 
+                'singular_name' => __('trabajo', 'Codelapps'),
+                'add_new' => __('Agregar Nuevo', 'Codelapps'),
+                'add_new_item' => __('Agregar Nuevo Trabajo', 'Codelapps'),
+                'edit' => __('Edit', 'Codelapps'),
+                'edit_item' => __('Editar trabajo', 'Codelapps'),
+                'new_item' => __('Nuevo trabajo', 'Codelapps'),
+                'view' => __('Ver portafolio', 'Codelapps'),
+                'view_item' => __('Ver trabajo', 'Codelapps'),
+                'search_items' => __('Buscar trabajos', 'Codelapps'),
+                'not_found' => __('No se encontraron trabajos', 'Codelapps'),
+                'not_found_in_trash' => __('No hay trabajos en la papelera', 'Codelapps')
+            ),
+            'public' => true,
+            'menu_icon' => get_template_directory_uri() . "/images/portfolio.png",
+            'hierarchical' => true, 
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail'
+            ), 
+            'can_export' => true, 
+            'taxonomies' => array(
+                'post_tag','category'
+            ) 
+        ));
+        
+    }
+
+    add_action('init', 'cp_posts_trabajo');
+
+    /**
+     * Soporte y tamaños para imagen destacada
+     */
+    function cp_setup(){
+        add_theme_support("post-thumbnails");
+    }
+
+    add_action('after_setup_theme','cp_setup');
 ?>

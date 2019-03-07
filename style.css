@@ -42,6 +42,10 @@ Text Domain: http://www.codelapps.com
     *zoom: 1;
 }
 
+.mt1 {
+    margin-top: 1em;
+}
+
 
 /********** PRINCIPAL STYLES - NAVIGATION *********/
 
@@ -49,7 +53,7 @@ html,
 body {
     width: 100%;
     /* background-image:to bottom #540355; */
-    background-image: linear-gradient(to bottom, #d00cd3, #540355);
+    background-image: linear-gradient(to bottom, #7f0081, #5e025f, #2d022e);
 }
 
 .contenedor {
@@ -204,4 +208,12 @@ nav.nav-principal ul li a {
         margin-right: -30%;
         transition: .3s ease-in;
     }
+}
+
+
+/********** text *********/
+
+.morado {
+    color: #5e025f;
+    font-weight: 600;
 }
