@@ -26,13 +26,13 @@
             the_post_thumbnail( '' , array('class' => 'responsive-img'));
         ?>
         <p><?php the_field('descripcion_corta');?></p>
-        <a href="<?php the_permalink(); ?>" class="mt1 waves-effect waves-light btn purple darken-2" >
+        <a href="<?php the_permalink(); ?>" class="mt1 waves-effect waves-light btn deep-purple darken-2" >
             Saber más
         </a>
         <?php
             if( get_field('enlace') ) {
         ?>
-        <a href="<?php the_field('enlace'); ?>" class="mt1 waves-effect waves-light btn purple darken-4" >
+        <a href="<?php the_field('enlace'); ?>" class="mt1 waves-effect waves-light btn deep-purple darken-4" >
             Ver proyecto
         </a>
         <?php } ?>

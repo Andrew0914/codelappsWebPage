@@ -46,6 +46,10 @@ Text Domain: http://www.codelapps.com
     margin-top: 1em;
 }
 
+.mr1 {
+    margin-right: 1em;
+}
+
 
 /********** PRINCIPAL STYLES - NAVIGATION *********/
 
@@ -210,14 +214,14 @@ nav.nav-principal ul li a {
     }
 }
 
+.instagram-bg {
+    background-image: linear-gradient(to bottom, orange, red, violet, #5e025f);
+}
+
 
 /********** text *********/
 
 .morado {
     color: #5e025f;
     font-weight: 600;
-}
-
-.enlace-rojo {
-    color: rgb(112, 0, 0);
 }

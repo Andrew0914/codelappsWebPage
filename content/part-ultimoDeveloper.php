@@ -33,14 +33,14 @@
 
         <p><?php the_field('descripcion_corta');?></p>
 
-        <a href="<?php the_permalink(); ?>" class="mt1 waves-effect waves-light btn purple darken-2" >
+        <a href="<?php the_permalink(); ?>" class="mt1 waves-effect waves-light btn deep-purple darken-2" >
             Más
         </a>
         <!-- enlace al demo -->
         <?php
             if( get_field('url_demo') ) {
         ?>
-        <a href="<?php the_field('url_demo'); ?>" class="mt1 waves-effect waves-light btn purple darken-4" >
+        <a href="<?php the_field('url_demo'); ?>" class="mt1 waves-effect waves-light btn deep-purple darken-4" >
             Ver Demo
         </a>
         <?php } ?>

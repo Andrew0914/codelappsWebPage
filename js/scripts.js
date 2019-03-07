@@ -30,4 +30,23 @@ $(document).ready(function() {
         }
     });
 
+    // modificando la visualizacion de las redes sociales
+    $(".redes-sociales li a").each(function(i, el) {
+        $(el).addClass('btn left mr1');
+        var enlace = $(el).attr('href');
+        if (enlace.includes('instagram')) {
+            $(el).addClass('instagram-bg');
+            $(el).html('<i class="fab fa-instagram fa-2x"></i>');
+        } else if (enlace.includes('twitter')) {
+            $(el).addClass('light-blue lighten-2');
+            $(el).html('<i class="fab fa-twitter fa-2x"></i>');
+        } else if (enlace.includes('youtube')) {
+            $(el).addClass('red darken-4');
+            $(el).html('<i class="fab fa-youtube fa-2x"></i>');
+        } else if (enlace.includes('facebook')) {
+            $(el).addClass('light-blue darken-4');
+            $(el).html('<i class="fab fa-facebook fa-2x"></i>');
+        }
+    });
+
 });

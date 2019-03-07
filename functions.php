@@ -36,20 +36,12 @@
     function cp_registro_menus(){
         register_nav_menus(array( 
             'header-menu' => __('Header Menu', 'Codelapps'), // Main Navigation
-            'acces-menu' => __('Accesos directos','Codelapps') // menu de accesos directos
+            'acces-menu' => __('Accesos directos','Codelapps'), // menu de accesos directos
+            'redes-sociales' => __('Redes sociales','Codelapps') // menu de redes sociales
         ));
     }
 
     add_action('init', 'cp_registro_menus');
-
-    /**
-     * Modificacion para el excerpt general
-     */
-    function cp_excerpt( $excerpt ){
-        return substr(get_the_content(), 0, 300) . "...";
-    }
-    
-    add_filter( 'the_excerpt', 'cp_excerpt', 10, 1 );
 
     /**
      * Registra el tipo de post para los trabajos en el portafolio

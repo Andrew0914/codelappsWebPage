@@ -8,9 +8,21 @@
             the_excerpt();
     ?>
     <br>
-    <a class="mt1 waves-effect waves-light btn purple darken-4" href="<?php the_permalink(); ?>">Saber más</a>
+    <a class="mt1 waves-effect waves-light btn deep-purple darken-4" href="<?php the_permalink(); ?>">Saber más</a>
     <?php
         endwhile; 
         wp_reset_postdata();
+    ?>
+    <!-- navegacion a redes -->
+    <?php
+        // argumentos para desplegar el menu
+        $args= array(
+            "theme_location"=> "redes-sociales",
+            "container"=> "div",
+            "container_class"=>"redes-sociales mt1"
+        );
+
+        // imprime el menu
+        wp_nav_menu($args);
     ?>
 </aside>
