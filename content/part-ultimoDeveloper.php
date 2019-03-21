@@ -21,7 +21,7 @@
         </h5>
         <?php
             if( get_field('video') ){
-                the_field('video');
+                echo '<div class="video-container">' .  get_field('video') . '</div>';
                 echo "<a href=". get_field('url_video') ." class='mt1 waves-effect waves-light btn red darken-4'><i class='fab fa-youtube'></i> Mirar el video</a>";
             }else {
                 the_post_thumbnail( '' , array('class' => 'responsive-img'));
