@@ -1,5 +1,5 @@
 <div class="white-text">
-    <h5 class='indigo-text'>
+    <h5 class='indigo-text text-darken-4'>
         Último trabajo 
     </h5>
     <?php

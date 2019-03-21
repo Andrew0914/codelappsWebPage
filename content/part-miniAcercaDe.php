@@ -1,4 +1,4 @@
-<h5 class="indigo-text">
+<h5 class="indigo-text text-darken-4">
     Acerca de 
 </h5>
 <aside class="grey-text text-lighten-4">
