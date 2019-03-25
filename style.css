@@ -219,9 +219,18 @@ nav.nav-principal ul li a {
 }
 
 
-/********** text *********/
+/********** texto *********/
 
-.morado {
-    color: #5e025f;
-    font-weight: 600;
+.texto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.titulo-especial {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: #757575;
 }
