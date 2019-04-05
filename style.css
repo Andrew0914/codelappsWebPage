@@ -51,185 +51,38 @@ Text Domain: http://www.codelapps.com
 }
 
 
-/********** PRINCIPAL STYLES - NAVIGATION *********/
-
-html,
-body {
-    width: 100%;
-    /* background-image:to bottom #540355; */
-    background-image: linear-gradient(to bottom, #7f0081, #5e025f, #2d022e);
-}
+/********* MAIN STYLES *********/
 
 .contenedor {
-    margin: 0 1%;
-    width: 95%;
-    position: relative;
-    overflow: hidden;
-}
-
-header.header-principal {
-    padding-top: 25px;
-    width: 5%;
-    height: 100%;
-    position: fixed;
-    overflow: hidden;
-    transition: .32s ease-out;
-    z-index: 2;
-}
-
-.toggle {
-    width: 312px !important;
-}
-
-nav.nav-principal {
-    overflow: hidden;
-    position: absolute;
-    transition: .3s ease-out;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    height: 100%;
-    background-color: transparent;
-    box-shadow: none;
-}
-
-nav.nav-principal ul li {
-    float: left;
-    padding: 4px 0;
-    width: 100%;
-    transition: .3s ease;
-}
-
-nav.nav-principal ul li a {
-    font-size: 20px;
-}
-
-.toggle nav.nav-principal {
-    margin-left: 65px;
-    opacity: 1;
-}
-
-.navBtn {
-    transform: rotate(0deg);
-    transition: .3s ease-out;
-    display: inline-block;
-    color: white;
-    cursor: pointer;
-}
-
-.toggle .navBtn {
-    transform: rotate(224deg);
-    color: #c4962b;
-}
-
-.main {
-    float: right;
-    width: 95%;
-    padding: 0;
-    transition: .6s ease-in;
-    overflow: hidden;
-    z-index: 2;
-    padding: 1%;
-}
-
-.push {
-    margin-right: -240px;
-    transition: .3s ease-in;
-}
-
-.overlay {
-    width: 100%;
-    background: #54035575;
-    opacity: .85;
-    z-index: 1;
-    height: 100%;
-    position: fixed;
-    display: none;
-}
-
-.block {
-    display: block;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
-/* MENU DE ACCESOS DIRECTOS */
+/********** NAVIGATION *********/
 
-.acces-navmenu {
-    transition: .3s ease-out;
+.header-princpal {
+    max-width: 100%;
 }
 
-.acces-navmenu ul {
-    z-index: 1000001;
-    left: 0;
-    list-style: none;
-    padding-top: 20px;
+.logo {
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
 }
 
-.acces-navmenu ul li {
-    padding: 20px 0px;
-}
-
-.acces-navmenu ul li a {
-    cursor: pointer;
-    color: white;
-    transition: .3s ease-out;
-}
-
-.acces-navmenu ul li a:hover {
-    color: #c4962b !important;
-}
-
-.desaparece {
-    display: none;
-}
-
-.current_page_item a {
-    color: #c4962b !important;
-}
-
-
-/* 768 */
-
-@media only screen and (max-width: 768px) {
-    .contenedor {
-        margin: 0;
-        width: 100%;
-    }
-    header.header-principal {
-        width: 10%;
-        text-align: center;
-    }
-    .main {
-        width: 90%;
-    }
-    .toggle {
-        width: 35% !important;
-    }
-    .toggle nav.nav-principal {
-        margin-left: 1%;
-    }
-    .push {
-        margin-right: -30%;
-        transition: .3s ease-in;
-    }
-}
-
-.instagram-bg {
-    background-image: linear-gradient(to bottom, orange, red, violet, #5e025f);
-}
-
-
-/********** texto *********/
-
-.texto {
-    font-family: 'Roboto', sans-serif;
-}
-
-.titulo {
+.mbrand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
     font-family: 'Noto Sans', sans-serif;
 }
 
-.titulo-especial {
-    font-family: 'Noto Sans', sans-serif;
-    color: #757575;
+.sidenav {
+    z-index: 10;
+    padding-top: 15%;
+}
+
+.sidenav-overlay {
+    z-index: 5;
 }

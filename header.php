@@ -9,41 +9,40 @@
             wp_head();
         ?>
     </head>
-    <body>
-    <div class="contenedor">
-        
-        <div class="overlay"></div>
+    <body class="grey lighten-4">
+        <!-- MENU PRINCIPAL -->
+        <header class='header-principal navbar-fixed'>
+            <nav class="purple darken-4">
+                <div class="nav-wrapper contenedor">
+                    <a href="#!" class="mbrand center-align">
+                        <img class="responsive-img logo" src="<?php echo get_template_directory_uri().'/images/andrew.png'; ?>" >
+                        Codelapps
+                    </a>
+                    <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                    <?php
+                        // argumentos para desplegar el menu
+                        $args= array(
+                            "theme_location"=> "header-menu",
+                            "container_class"=>"right hide-on-med-and-down"
+                        );
 
-        <header class='header-principal'>
-
-            <!-- BOTON PARA NAVEGACION COMPLETA -->
-            <div class="navBtn">
-                <i class="fas fa-plus-circle fa-2x"></i>
-            </div>
-            <!-- MENU DE ACCESOS DIRECTOS -->
-            <?php
-                // argumentos para desplegar el menu
-                $args= array(
-                    "theme_location"=> "header-menu",
-                    "container"=> "nav",
-                    "container_class"=>"nav-principal"
-                );
-
-                // imprime el menu
-                wp_nav_menu($args);
-            ?>
-            <!-- MENU COMPLETO -->
-            <?php
-                // argumentos para desplegar el menu
-                $args= array(
-                    "theme_location"=> "acces-menu",
-                    "container"=> "div",
-                    "container_class"=>"acces-navmenu"
-                );
-
-                // imprime el menu
-                wp_nav_menu($args);
-            ?>
+                        // imprime el menu
+                        wp_nav_menu($args);
+                    ?>
+                </div>
+            </nav>
         </header>
+        <!-- MENU MOVIL -->
+        <?php
+            // argumentos para desplegar el menu
+            $args= array(
+                "theme_location"=> "header-menu",
+                "container_class"=>"sidenav",
+                "container_id" => "mobile-menu"
+            );
+
+            // imprime el menu
+            wp_nav_menu($args);
+        ?>
         <!-- SECCION PARA EL CONTENIDO PRINCIPAL -->
-        <section class="main">  
+        <section class="main contenedor">  
