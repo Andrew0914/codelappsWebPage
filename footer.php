@@ -4,19 +4,19 @@
                 <!-- PREVIEW ACERCA DE -->
                 <div class="col l4 m12 s12">
                     <?php
-                        get_template_part( 'content/part' , 'miniAcercaDe');
+                    get_template_part('content/part', 'miniAcercaDe');
                     ?>
                 </div>
                 <!-- PREVIEW DEVELOPER -->
                 <div class="col l4 m12 s12">
-                <?php
-                    get_template_part( 'content/part' , 'ultimoDeveloper');
-                ?>
+                    <?php
+                    get_template_part('content/part', 'ultimoDeveloper');
+                    ?>
                 </div>
                 <!-- PREVIRE PORTAFOLIO -->
                 <div class="col l4 m12 s12">
                     <?php
-                        get_template_part( 'content/part' , 'ultimoTrabajo');
+                    get_template_part('content/part', 'ultimoTrabajo');
                     ?>
                 </div>
             </div>
@@ -24,15 +24,20 @@
             <div class="row footer-copyright">
                 <div class="col s12">
                     © 2019 Copyright Andrew Alan Gonzalez
+                    <br>
+                    <small>
+                        Some Icons made by Freepik from <a href="www.flaticon.com">www.flaticon.com</a>
+                    </small>
                     <a class="white-text right" href="https://github.com/Andrew0914">
                         Visita mi GitHub <i class="fab fa-github"></i>
-                    </a>  
+                    </a>
                 </div>
             </div>
             <?php wp_footer(); ?>
         </footer>
-        
+
 
         </section>
-    </body>
-</html>
+        </body>
+
+        </html> 
