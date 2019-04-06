@@ -6,6 +6,11 @@
                     <?php
                     get_template_part('content/part', 'miniAcercaDe');
                     ?>
+                    <div class="clear"></div>
+                    <small>
+                        Some Icons made by Freepik from 
+                        <u><a href="www.flaticon.com" class='indigo-text text-darken-5'>www.flaticon.com</a></u>
+                    </small>
                 </div>
                 <!-- PREVIEW DEVELOPER -->
                 <div class="col l4 m12 s12">
@@ -24,10 +29,6 @@
             <div class="row footer-copyright">
                 <div class="col s12">
                     © 2019 Copyright Andrew Alan Gonzalez
-                    <br>
-                    <small>
-                        Some Icons made by Freepik from <a href="www.flaticon.com">www.flaticon.com</a>
-                    </small>
                     <a class="white-text right" href="https://github.com/Andrew0914">
                         Visita mi GitHub <i class="fab fa-github"></i>
                     </a>

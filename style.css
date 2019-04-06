@@ -58,6 +58,13 @@ Text Domain: http://www.codelapps.com
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .contenedor {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 
 /********** NAVIGATION *********/
 
@@ -85,4 +92,22 @@ Text Domain: http://www.codelapps.com
 
 .sidenav-overlay {
     z-index: 5;
+}
+
+
+/********** img *********/
+
+.rounded {
+    border-radius: 100%;
+}
+
+
+/********* text *********/
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.noto {
+    font-family: 'Noto Sans', sans-serif;
 }

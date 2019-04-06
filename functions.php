@@ -90,6 +90,8 @@
      * Soporte y tamaños para imagen destacada
      */
     function cp_setup(){
+        add_image_size('512px2', 512, 512, false);
+        add_image_size('256px2', 256, 256, false);
         add_theme_support("post-thumbnails");
     }
 
