@@ -1,7 +1,4 @@
-<h5 class="indigo-text text-darken-4">
-    Acerca de 
-</h5>
-<aside class="grey-text text-lighten-4">
+<aside class="grey-text text-lighten-4 roboto">
     <?php 
         $acercade = new WP_Query('page_id=19');
         while($acercade->have_posts()): $acercade->the_post();

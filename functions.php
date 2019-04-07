@@ -8,7 +8,7 @@
         wp_register_style('fontawesome', "https://use.fontawesome.com/releases/v5.7.2/css/all.css", array() , '5.7.2');
         wp_register_style('fonts', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto', array(), '1.0.0');
         wp_register_style("animate", get_template_directory_uri() . '/css/animate.css' ,array(), '1.0.0');
-        wp_register_style("principal", get_template_directory_uri() . '/style.css' ,array('fonts'), '1.0.0');
+        wp_register_style("principal", get_template_directory_uri() . '/style.css' ,array('fonts','materialcss'), '1.0.0');
         
         //agregamos
         wp_enqueue_style("materialcss");
