@@ -1,43 +1,54 @@
-<div class="white-text">
-    <h5 class='indigo-text text-darken-4'>
-        Último trabajo 
-    </h5>
-    <?php
-        // query ultimo trabajo
-        $args = array(
-            'post_type'=> 'trabajo',
-            'posts_per_page' => 1,
-            'order'=>'DESC',
-            'orderby'=> 'date'
-        );
+<?php
+include_once TEMPLATEPATH . '/services/getPosts.php';
 
-        $trabajos = new WP_Query($args);
-        while($trabajos->have_posts()): $trabajos->the_post();
-    ?>
-    <!-- ULTIMO TRABAMO -->
-    <article>
-        <h5>
-            <?php the_title(); ?>
-        </h5>
-        <h6>
-            <?php the_field('tipo_desarrollo'); ?>
-        </h6>
-        <?php
-            the_post_thumbnail( '' , array('class' => 'responsive-img'));
-        ?>
-        <p><?php the_field('descripcion_corta');?></p>
-        <a href="<?php the_permalink(); ?>" class="mt1 waves-effect waves-light btn deep-purple darken-2" >
-            Saber más
-        </a>
-        <?php
-            if( get_field('enlace') ) {
-        ?>
-        <a href="<?php the_field('enlace'); ?>" class="mt1 waves-effect waves-light btn deep-purple darken-4" >
-            Ver proyecto
-        </a>
-        <?php } ?>
-    </article>
-    <!-- /row de portafolio -->
-    <?php  endwhile; wp_reset_postdata(); ?>
-    <!-- aqui-->
-</div>
+function postsTrabajo($number_posts,$options) {
+	$trabajos = getPosts($number_posts, 'trabajo');
+	while ($trabajos->have_posts()) : $trabajos->the_post();
+	?>
+	<div class="<?php echo $options['main_class'] ?>">
+		<div class="<?php echo $options['inner_class']?>">
+			<h5 class="<?php echo $options['title_class']?>">
+				<?php the_title(); ?>
+			</h5>
+			<?php
+				if (get_field('video')) {
+					echo '<div class="video-container">' .  get_field('video') . '</div>';
+					echo "<a href=" . get_field('url_video') . " class='mt1 waves-effect waves-light btn red darken-4'><i class='fab fa-youtube'></i> Mirar el video</a>";
+				} else if(get_field('snippet_principal')){
+					the_field('snippet_principal');
+				} else {
+					the_post_thumbnail('', array('class' => 'responsive-img'));
+				}
+			?>
+			<?php if ($options['has_short']) { ?>
+			<p class="<?php echo $options['short_class'] ?>" >
+				<?php the_field('descripcion_corta'); ?>
+			</p>
+			<?php } ?>
+
+			<?php if ($options['has_content']) { ?>
+			<div class="<?php echo $options['content_class'] ?>">
+				<?php the_content(); ?>
+			</div>
+            <?php } ?>
+            
+            <span class="new badge blue-grey darken-4">
+                <?php the_field('tipo_desarrollo'); ?>
+            </span>
+		</div>
+        <div class="<?php echo $options['actions_class']?>">
+            <?php if ($options['more']) { ?>
+                <a href="<?php the_permalink(); ?>" class="<?php echo $options['learnmore_class']?>">
+                    Más <i class="fas fa-plus"></i>
+                </a>
+			<?php } ?>
+			
+			<?php if (get_field('enlace')) { ?>
+				<a href="<?php the_field('enlace'); ?>" class="<?php echo $options['enlace_class']?>">
+					Ver Demo <i class="fas fa-external-link-alt"></i>
+				</a>
+			<?php } ?>
+		</div>
+	</div>
+	<?php endwhile; wp_reset_postdata(); ?>
+<?php } ?>

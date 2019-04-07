@@ -1,5 +1,6 @@
 <?php
     include_once TEMPLATEPATH . '/content/part-postsDeveloper.php'; 
+    include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
 ?>
 <!-- FOOTER PRINCIPAL DEL SITIO -->
         <footer class="page-footer amber darken-4 z-depth-1">
@@ -32,15 +33,29 @@
                             'demo_class' => 'mt1 waves-effect waves-light btn orange darken-4',
                             'has_short' => true,
                             'has_content' => false,
-                            'short_class'=> 'roboto mt1'
+                            'short_class'=> 'roboto mt1',
+                            'more'=>'true'
                         ]);
                     ?>
                 </div>
                 <!-- PREVIRE PORTAFOLIO -->
                 <div class="col l4 m12 s12">
+                    <h4 class="deep-purple-text text-darken-4 noto">
+                            Lo último developer
+                    </h4>
                     <?php
-                    get_template_part('content/part', 'postsTrabajo');
-                    ?>
+                        postsTrabajo(1,[
+                            'title_class' =>'noto',
+                            'actions_class' => 'mt1',
+                            'learnmore_class' => 'mt1 waves-effect waves-light btn purple darken-4',
+                            'download_class' => 'mt1 waves-effect waves-light btn green darken-4',
+                            'enlace_class' => 'mt1 waves-effect waves-light btn red darken-4',
+                            'has_short' => true,
+                            'has_content' => false,
+                            'short_class'=> 'roboto mt1',
+                            'more'=>'true'
+                        ]);
+                        ?>
                 </div>
             </div>
             <!-- COPYRIGHT Y ENLACES DE INTERES -->
