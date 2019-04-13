@@ -55,15 +55,23 @@ Text Domain: http://www.codelapps.com
 }
 
 .mb1 {
-    margin-right: 1em;
+    margin-bottom: 1em !important;
 }
 
 .pt1 {
-    padding: 1em;
+    padding-top: 1em;
+}
+
+.pb4 {
+    padding-bottom: 4.5em !important;
 }
 
 .card-action a {
     color: #e65100 !important;
+}
+
+.round1 {
+    border-radius: 0.2em;
 }
 
 
@@ -90,6 +98,7 @@ Text Domain: http://www.codelapps.com
 
 .header-princpal {
     max-width: 100%;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -130,4 +139,11 @@ Text Domain: http://www.codelapps.com
 
 .noto {
     font-family: 'Noto Sans', sans-serif;
+}
+
+
+/******* Buttons *********/
+
+.instagram-bg {
+    background-image: linear-gradient(to right, red, orange, green, blue, indigo, violet);
 }

@@ -12,7 +12,7 @@
     <body class="grey lighten-4">
         <!-- MENU PRINCIPAL -->
         <header class='header-principal navbar-fixed'>
-            <nav class="purple darken-4">
+            <nav class="blue-grey darken-4 pb4">
                 <div class="nav-wrapper contenedor">
                     <a href="#!" class="mbrand center-align">
                         <img class="responsive-img logo" src="<?php echo get_template_directory_uri().'/images/andrew.png'; ?>" >
@@ -37,7 +37,7 @@
             // argumentos para desplegar el menu
             $args= array(
                 "theme_location"=> "header-menu",
-                "container_class"=>"sidenav",
+                "container_class"=>"blue-grey darken-4 text-white sidenav",
                 "container_id" => "mobile-menu"
             );
 

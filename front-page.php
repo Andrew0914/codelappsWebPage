@@ -4,7 +4,7 @@
     include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
     get_header();
 ?>
-<div class="card">
+<div class="card mt1">
     <div class="card-content">
         <div class="row">
         <?php while(have_posts()): the_post(); ?>  

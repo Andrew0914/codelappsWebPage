@@ -3,7 +3,7 @@
     include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
 ?>
 <!-- FOOTER PRINCIPAL DEL SITIO -->
-        <footer class="page-footer amber darken-4 z-depth-1">
+        <footer class="page-footer grey darken-4 z-depth-1 round1">
             <div class="row">
                 <!-- PREVIEW ACERCA DE -->
                 <div class="col l4 m12 s12">
