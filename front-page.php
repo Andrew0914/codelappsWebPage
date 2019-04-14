@@ -43,7 +43,7 @@
 <div class="row">
     <?php
         postsBlog(4,[
-            'main_class' => 'card col l3 m3 s12 z-depth-2 blue-grey darken-4',
+            'main_class' => 'card col l3 m3 s12 z-depth-2 grey darken-4',
             'inner_class' => 'card-content white-text',
             'title_class' =>'card_title activator noto',
             'content_class' => 'roboto',

@@ -103,8 +103,9 @@ Text Domain: http://www.codelapps.com
 
 .logo {
     border-radius: 100%;
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
+    margin-top: 2px;
 }
 
 .mbrand {
@@ -121,6 +122,10 @@ Text Domain: http://www.codelapps.com
 
 .sidenav-overlay {
     z-index: 5;
+}
+
+.active-menu {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 

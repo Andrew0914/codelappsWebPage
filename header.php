@@ -12,9 +12,9 @@
     <body class="grey lighten-4">
         <!-- MENU PRINCIPAL -->
         <header class='header-principal navbar-fixed'>
-            <nav class="blue-grey darken-4 pb4">
+            <nav class="blue-grey darken-4">
                 <div class="nav-wrapper contenedor">
-                    <a href="#!" class="mbrand center-align">
+                    <a href="<?php echo home_url(); ?>" class="mbrand center-align">
                         <img class="responsive-img logo" src="<?php echo get_template_directory_uri().'/images/andrew.png'; ?>" >
                         Codelapps
                     </a>

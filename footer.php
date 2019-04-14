@@ -3,11 +3,11 @@
     include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
 ?>
 <!-- FOOTER PRINCIPAL DEL SITIO -->
-        <footer class="page-footer grey darken-4 z-depth-1 round1">
+        <footer class="page-footer teal z-depth-1 round1">
             <div class="row">
                 <!-- PREVIEW ACERCA DE -->
                 <div class="col l4 m12 s12">
-                <h4 class="indigo-text text-darken-4">
+                <h4 class="white-text text-darken-4">
                     Acerca de 
                 </h4>
                     <?php
@@ -21,7 +21,7 @@
                 </div>
                 <!-- PREVIEW DEVELOPER -->
                 <div class="col l4 m12 s12">
-                    <h4 class="deep-purple-text text-darken-4 noto">
+                    <h4 class="white-texttext-darken-4 noto">
                         Lo último developer
                     </h4>
                     <?php
@@ -40,8 +40,8 @@
                 </div>
                 <!-- PREVIRE PORTAFOLIO -->
                 <div class="col l4 m12 s12">
-                    <h4 class="deep-purple-text text-darken-4 noto">
-                            Lo último developer
+                    <h4 class="white-text text-darken-4 noto">
+                            Lo último portafolio
                     </h4>
                     <?php
                         postsTrabajo(1,[

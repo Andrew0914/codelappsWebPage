@@ -22,4 +22,8 @@ $(document).ready(function() {
         }
     });
 
+    // active menu
+    $(".current-menu-item").addClass("active-menu");
+    $(".current-menu-item a").addClass("yellow-text text-darken-3");
+
 });
