@@ -46,6 +46,10 @@ Text Domain: http://www.codelapps.com
     margin-top: 1em !important;
 }
 
+.mt0 {
+    margin-top: 0 !important;
+}
+
 .mt2 {
     margin-top: 2em !important;
 }
@@ -82,7 +86,7 @@ Text Domain: http://www.codelapps.com
 /********* MAIN STYLES *********/
 
 .contenedor {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -143,6 +147,11 @@ Text Domain: http://www.codelapps.com
     border-radius: 100%;
 }
 
+.img64 {
+    width: 64px !important;
+    height: 64px !important;
+}
+
 
 /********* text *********/
 
@@ -152,6 +161,14 @@ Text Domain: http://www.codelapps.com
 
 .noto {
     font-family: 'Noto Sans', sans-serif;
+}
+
+.normal-text {
+    font-size: 16px;
+}
+
+.justify {
+    text-align: justify;
 }
 
 
@@ -166,4 +183,11 @@ Text Domain: http://www.codelapps.com
     padding: 0px 8px !important;
     height: 16px !important;
     color: #212121;
+}
+
+input,
+textarea {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
 }
