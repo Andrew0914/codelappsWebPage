@@ -5,7 +5,9 @@
             the_excerpt();
     ?>
     <br>
-    <a class="mt1 waves-effect waves-light btn deep-purple darken-4" href="<?php the_permalink(); ?>">Saber más</a>
+    <a class="mt1 waves-effect waves-light btn light-blue darken-3" href="<?php the_permalink(); ?>">
+        Más <i class="fa fa-plus"></i>
+    </a>
     <?php
         endwhile; 
         wp_reset_postdata();

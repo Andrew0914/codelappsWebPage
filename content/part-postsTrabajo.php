@@ -10,6 +10,11 @@ function postsTrabajo($number_posts,$options) {
 			<h5 class="<?php echo $options['title_class']?>">
 				<?php the_title(); ?>
 			</h5>
+			<div class="chip chip-sm">
+				<small>
+					<?php the_field('tipo_desarrollo'); ?>
+				</small>
+			</div>
 			<?php
 				if (get_field('video')) {
 					echo '<div class="video-container">' .  get_field('video') . '</div>';
@@ -32,9 +37,6 @@ function postsTrabajo($number_posts,$options) {
 			</div>
             <?php } ?>
             
-            <span class="new badge blue-grey darken-4">
-                <?php the_field('tipo_desarrollo'); ?>
-            </span>
 		</div>
         <div class="<?php echo $options['actions_class']?>">
             <?php if ($options['more']) { ?>
@@ -44,8 +46,8 @@ function postsTrabajo($number_posts,$options) {
 			<?php } ?>
 			
 			<?php if (get_field('enlace')) { ?>
-				<a href="<?php the_field('enlace'); ?>" class="<?php echo $options['enlace_class']?>">
-					Ver Demo <i class="fas fa-external-link-alt"></i>
+				<a href="<?php the_field('enlace'); ?>" class="tooltipped <?php echo $options['enlace_class']?>" data-position="right" data-tooltip="demo">
+					<i class="fas fa-external-link-alt"></i>
 				</a>
 			<?php } ?>
 		</div>

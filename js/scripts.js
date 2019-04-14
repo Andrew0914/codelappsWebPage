@@ -24,6 +24,11 @@ $(document).ready(function() {
 
     // active menu
     $(".current-menu-item").addClass("active-menu");
-    $(".current-menu-item a").addClass("yellow-text text-darken-3");
+    $(".current-menu-item a").addClass("light-blue-text text-darken-3");
+
+    //tootiped
+    $(document).ready(function() {
+        $('.tooltipped').tooltip();
+    });
 
 });

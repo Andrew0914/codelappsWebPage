@@ -13,7 +13,7 @@ function postsDevelopers($number_posts,$options) {
 			<?php
 				if (get_field('video')) {
 					echo '<div class="video-container">' .  get_field('video') . '</div>';
-					echo "<a href=" . get_field('url_video') . " class='mt1 waves-effect waves-light btn red darken-4'><i class='fab fa-youtube'></i> Mirar el video</a>";
+					echo "<a href=" . get_field('url_video') . " class='mt1 waves-effect waves-light btn red darken-4'><i class='fab fa-youtube'></i>Ver en YouTube</a>";
 				} else if(get_field('snippet_principal')){
 					the_field('snippet_principal');
 				} else {
@@ -38,16 +38,17 @@ function postsDevelopers($number_posts,$options) {
                     Más <i class="fas fa-plus"></i>
                 </a>
 			<?php } ?>
-			<?php if (get_field('url_demo')) { ?>
-				<a href="<?php the_field('url_demo'); ?>" class="<?php echo $options['demo_class']?>">
-					Ver Demo <i class="fas fa-external-link-alt"></i>
-				</a>
-			<?php } ?>
 			<?php	if (get_field('url_descarga')) { ?>
-				<a href="<?php the_field('url_descarga'); ?>" class="<?php echo $options['download_class']?>">
-					Descargar <i class="fas fa-download"></i>
+				<a href="<?php the_field('url_descarga'); ?>" class="tooltipped <?php echo $options['download_class']?>" data-position="bottom" data-tooltip="descargar">
+					<i class="fas fa-download"></i>
 				</a>
 			<?php } ?>
+			<?php if (get_field('url_demo')) { ?>
+				<a href="<?php the_field('url_demo'); ?>" class="tooltipped <?php echo $options['demo_class']?>" data-position="right" data-tooltip="demo">
+					<i class="fas fa-external-link-alt"></i>
+				</a>
+			<?php } ?>
+			
 		</div>
 	</div>
 	<?php endwhile; wp_reset_postdata(); ?>

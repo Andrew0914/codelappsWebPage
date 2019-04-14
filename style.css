@@ -67,7 +67,7 @@ Text Domain: http://www.codelapps.com
 }
 
 .card-action a {
-    color: #e65100 !important;
+    color: #f57f17 !important;
 }
 
 .round1 {
@@ -151,4 +151,11 @@ Text Domain: http://www.codelapps.com
 
 .instagram-bg {
     background-image: linear-gradient(to right, red, orange, green, blue, indigo, violet);
+}
+
+.chip-sm {
+    line-height: 8px !important;
+    padding: 0px 8px !important;
+    height: 16px !important;
+    color: #212121;
 }

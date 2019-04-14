@@ -28,9 +28,9 @@
                         postsDevelopers(1,[
                             'title_class' =>'noto',
                             'actions_class' => 'mt1',
-                            'learnmore_class' => 'mt1 waves-effect waves-light btn purple darken-4',
+                            'learnmore_class' => 'mt1 waves-effect waves-light btn light-blue darken-3',
                             'download_class' => 'mt1 waves-effect waves-light btn green darken-4',
-                            'demo_class' => 'mt1 waves-effect waves-light btn orange darken-4',
+                            'demo_class' => 'mt1 waves-effect waves-light btn yellow darken-4',
                             'has_short' => true,
                             'has_content' => false,
                             'short_class'=> 'roboto mt1',
@@ -47,9 +47,9 @@
                         postsTrabajo(1,[
                             'title_class' =>'noto',
                             'actions_class' => 'mt1',
-                            'learnmore_class' => 'mt1 waves-effect waves-light btn purple darken-4',
+                            'learnmore_class' => 'mt1 waves-effect waves-light btn light-blue darken-3',
                             'download_class' => 'mt1 waves-effect waves-light btn green darken-4',
-                            'enlace_class' => 'mt1 waves-effect waves-light btn red darken-4',
+                            'enlace_class' => 'mt1 waves-effect waves-light btn yellow darken-4',
                             'has_short' => true,
                             'has_content' => false,
                             'short_class'=> 'roboto mt1',
