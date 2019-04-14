@@ -37,7 +37,7 @@
             // argumentos para desplegar el menu
             $args= array(
                 "theme_location"=> "header-menu",
-                "container_class"=>"blue-grey darken-4 text-white sidenav",
+                "container_class"=>"blue-grey darken-4 sidenav mt3",
                 "container_id" => "mobile-menu"
             );
 

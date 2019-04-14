@@ -16,7 +16,7 @@
                     <div class="clear"></div>
                     <small class="roboto">
                         Some Icons made by Freepik from 
-                        <a href="www.flaticon.com" class='indigo-text text-darken-5'>www.flaticon.com</a>
+                        <a href="www.flaticon.com" class='indigo-text text-darken-4'>www.flaticon.com</a>
                     </small>
                 </div>
                 <!-- PREVIEW DEVELOPER -->
