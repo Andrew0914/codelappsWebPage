@@ -95,6 +95,11 @@ Text Domain: http://www.codelapps.com
         width: 95%;
         margin: 0 auto;
     }
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .cursor {
@@ -147,9 +152,16 @@ Text Domain: http://www.codelapps.com
     border-radius: 100%;
 }
 
-.img64 {
-    width: 64px !important;
-    height: 64px !important;
+.minigaleria li figure img {
+    width: 60px !important;
+    height: 56px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .minigaleria .blocks-gallery-image,
+    .wp-block-gallery .blocks-gallery-item {
+        width: auto;
+    }
 }
 
 
@@ -165,6 +177,14 @@ Text Domain: http://www.codelapps.com
 
 .normal-text {
     font-size: 16px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.big-text {
+    font-size: 20px;
 }
 
 .justify {
@@ -183,11 +203,4 @@ Text Domain: http://www.codelapps.com
     padding: 0px 8px !important;
     height: 16px !important;
     color: #212121;
-}
-
-input,
-textarea {
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
 }

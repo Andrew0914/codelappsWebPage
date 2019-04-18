@@ -23,11 +23,12 @@
         // registramos js´s
         wp_register_script('materialjs','https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js', array(), '1.0.0',true);
         wp_register_script('scripts',get_template_directory_uri() . '/js/scripts.js', array('materialjs','jquery'), '1.0.0',true);
-
+        wp_register_script('sendmail',get_template_directory_uri() . '/js/sendMail.js', array('materialjs','jquery'), '1.0.0',true);
         // agregamos
         wp_enqueue_script("jquery");
         wp_enqueue_script("materialjs");
         wp_enqueue_script("scripts");
+        wp_enqueue_script("sendmail");
     }
 
     // registramos los scripts de estilo y js

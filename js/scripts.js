@@ -31,9 +31,10 @@ $(document).ready(function() {
         $('.tooltipped').tooltip();
     });
 
-    //gallery 
-    $(".wp-block-gallery li figure img").addClass("img64");
 
-    // wpforms
-    $("textarea").addClass("materialize-textarea");
+    // collections
+    $(".collection li").addClass("collection-item");
+
+    // collapsible
+    $('.collapsible').collapsible();
 });

@@ -4,7 +4,7 @@
     include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
     get_header();
 ?>        
-<div class="card mt1 z-depth-2">
+<div class="card mt1 z-depth-2 animated fadeIn">
     <div class="card-content">
         <div class="container">
         <?php while(have_posts()): the_post(); ?>
