@@ -5,8 +5,8 @@ function postsTrabajo($number_posts,$options) {
 	$trabajos = getPosts($number_posts, 'trabajo');
 	while ($trabajos->have_posts()) : $trabajos->the_post();
 	?>
-	<div class="<?php echo $options['main_class'] ?>">
-		<div class="<?php echo $options['inner_class']?>">
+	<div class="<?php echo isset($options['main_class']) ? $options['main_class'] : ''; ?>">
+		<div class="<?php echo isset($options['inner_class']) ? $options['inner_class'] : ''; ?>">
 			<h5 class="<?php echo $options['title_class']?>">
 				<?php the_title(); ?>
 			</h5>
@@ -40,13 +40,13 @@ function postsTrabajo($number_posts,$options) {
 		</div>
         <div class="<?php echo $options['actions_class']?>">
             <?php if ($options['more']) { ?>
-                <a href="<?php the_permalink(); ?>" class="<?php echo $options['learnmore_class']?>">
+                <a href="<?php the_permalink(); ?>" class="<?php echo isset($options['learnmore_class']) ? $options['learnmore_class'] : ''; ?>">
                     Más <i class="fas fa-plus"></i>
                 </a>
 			<?php } ?>
 			
 			<?php if (get_field('enlace')) { ?>
-				<a href="<?php the_field('enlace'); ?>" class="tooltipped <?php echo $options['enlace_class']?>" data-position="right" data-tooltip="demo">
+				<a href="<?php the_field('enlace'); ?>" class="tooltipped <?php echo isset($options['enlace_class']) ? $options['enlace_class'] : ''; ?>" data-position="right" data-tooltip="demo">
 					<i class="fas fa-external-link-alt"></i>
 				</a>
 			<?php } ?>

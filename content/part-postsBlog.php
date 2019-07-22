@@ -6,7 +6,6 @@ function postsBlog($number_posts,$options) {
 	while ($posts->have_posts()) : $posts->the_post();
 	?>
     <div class="<?php echo $options['main_class'] ?>">
-    
         <div class="<?php echo $options['inner_class']?>">
             <p>
                 <b>BLOG</b>
@@ -18,7 +17,7 @@ function postsBlog($number_posts,$options) {
                 <?php $options['excerpt'] ? the_excerpt() : the_content(); ?>
                 <div class="chip mt1">
                     <img class="responsive-img logo" src="<?php echo get_template_directory_uri().'/images/andrew.png'; ?>" >
-                    <?php the_author_nickname(); ?>
+                    <?php the_author(); ?>
                 </div>
                 <p><small>12/09/2015</small></p>
             </div>
@@ -36,7 +35,7 @@ function postsBlog($number_posts,$options) {
 
         <?php if( $options['actions'] ){ ?>
 		<div class="<?php echo $options['actions_class']?>">
-			<a href="<?php the_permalink(); ?>" class="<?php echo $options['learnmore_class']?>">
+			<a href="<?php the_permalink(); ?>" class="<?php echo isset($options['learnmore_class']) ? $options['learnmore_class'] : ''; ?>">
 				Más <i class="fas fa-plus"></i>
             </a>
         </div>
