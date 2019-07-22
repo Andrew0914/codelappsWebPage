@@ -63,16 +63,17 @@
 </h3>
 <div class="row">
     <?php
-            postsTrabajo(3,[
-                'main_class' => 'card col l4 m4 s12 z-depth-2',
-                'inner_class' => 'card-content',
-                'title_class' =>'card_title noto',
-                'actions_class' => 'card-action',
-                'has_short' => true,
-                'short_class' => 'mt1 roboto',
-                'has_content' => false,
-                'more'=>'true'
-            ]);
+        postsTrabajo(3,[
+            'layout_class' => 'col l4 m4 s12',
+            'container_class' => 'card z-depth-2',
+            'inner_class' => 'card-content',
+            'title_class' =>'card_title noto',
+            'actions_class' => 'card-action',
+            'has_short' => true,
+            'short_class' => 'mt1 roboto',
+            'has_content' => false,
+            'more'=>'true'
+        ]);
     ?> 
 </div> 
 <?php
