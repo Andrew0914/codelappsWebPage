@@ -25,7 +25,8 @@
 <div class="row">
     <?php
         postsDevelopers(4,[
-            'main_class' => 'card col l6 m6 s12 z-depth-2',
+            'layout_class' => 'col l6 m6 s12',
+            'container_class' => 'card z-depth-2',
             'inner_class' => 'card-content',
             'title_class' =>'card_title noto',
             'actions_class' => 'card-action',
