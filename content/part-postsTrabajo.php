@@ -17,14 +17,7 @@ function postsTrabajo($number_posts,$options) {
 					</small>
 				</div>
 				<?php
-					if (get_field('video')) {
-						echo '<div class="video-container">' .  get_field('video') . '</div>';
-						echo "<a href=" . get_field('url_video') . " class='mt1 waves-effect waves-light btn red darken-4'><i class='fab fa-youtube'></i> Mirar el video</a>";
-					} else if(get_field('snippet_principal')){
-						the_field('snippet_principal');
-					} else {
-						the_post_thumbnail('', array('class' => 'responsive-img'));
-					}
+					the_post_thumbnail('', array('class' => 'responsive-img'));
 				?>
 				<?php if ($options['has_short']) { ?>
 				<p class="<?php echo $options['short_class'] ?>" >
