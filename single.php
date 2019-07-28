@@ -5,26 +5,62 @@
 <?php while(have_posts()): the_post(); ?>  
 <div class="card mt1 z-depth-2">
     <div class="card-content">
+
         <!-- TITLE -->
-        <span class="card-title">
-            <div class="row">
-                <div class="col m10 s12">
-                    <b><?php the_title(); ?></b>
-                    <?php if( get_field('tipo_desarrollo') ){ ?>
-                    <div class="chip chip-sm big-text">
-                        <small>
-                            <?php the_field('tipo_desarrollo'); ?>
-                        </small>
+        <div class="row">
+            <div class="col s12">                
+                <span class="card-title">
+                    <div class="row">
+                        <div class="col m10 s12">
+                            <h3><?php the_title(); ?></h3>
+                            <?php if( get_field('tipo_desarrollo') ){ ?>
+                            <div class="chip chip-sm big-text">
+                                <small>
+                                    <?php the_field('tipo_desarrollo'); ?>
+                                </small>
+                            </div>
+                            <?php } ?>
+                        </div>
+                        <div class="col m2 s12">
+                            <?php the_post_thumbnail('' ,['class' => 'responsive-img materialboxed'])?>
+                        </div>
                     </div>
-                    <?php } ?>
-                </div>
-                <div class="col m2 s12">
-                    <?php the_post_thumbnail('' ,['class' => 'responsive-img materialboxed'])?>
-                </div>
+                </span>
             </div>
-        </span>
+        </div>
+
         <!-- CONTENT -->
-        <?php the_content(); ?>
+        <div class="row">
+            <div class="col s12">
+                <?php the_content(); ?>
+            </div>
+        </div>
+        
+        <!-- CODE -->
+        <div class="row">
+            <div class="col s12">
+            <?php
+                if (get_field('snippet_principal')) {
+                    echo '<h5 class="noto" name="snippet_principal">Code:</h5>';
+                    echo  get_field('snippet_principal');
+                }
+            ?>
+            </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="row">
+            <div class="col s12 m8">
+            <?php
+                if (get_field('video')) {
+                    echo '<h5 class="noto" name="video">Video:</h5>';
+                    echo '<div class="video-container">' .  get_field('video') . '</div>';
+                }
+            ?>
+            </div>
+        </div>
+
+
        
     </div>
 
