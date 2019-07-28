@@ -54,4 +54,4 @@ function postsDevelopers($number_posts,$options) {
 		</div>
 	</div>
 	<?php endwhile; wp_reset_postdata(); ?>
-<?php } ?>
+<?php return $codes; } ?>
