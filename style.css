@@ -94,7 +94,7 @@ Text Domain: http://www.codelapps.com
 /********* MAIN STYLES *********/
 
 .contenedor {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -236,4 +236,44 @@ Text Domain: http://www.codelapps.com
     background-color: #f57f17 !important;
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+
+/** BUSCADOR ****/
+
+#buscador {
+    display: none;
+    position: relative;
+    height: 100px;
+}
+
+#buscador form {
+    position: fixed;
+    z-index: 100;
+    width: 80% !important;
+}
+
+.input-field input[type="search"]+.label-icon {
+    -webkit-transform: none;
+    transform: none;
+    top: 0.7rem;
+    left: auto;
+}
+
+.input-search {
+    padding-left: 30px !important;
+    font-size: 18px !important;
+}
+
+.search-close {
+    top: 0.7rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .mobile-search {
+        display: none;
+    }
+    #buscador form {
+        width: 100%;
+    }
 }

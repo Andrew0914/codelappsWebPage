@@ -70,5 +70,6 @@
             <?php wp_footer(); ?>
         </footer>
         </section>
+        <!-- Element Showed -->
     </body>
 </html> 

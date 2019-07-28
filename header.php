@@ -13,12 +13,19 @@
         <!-- MENU PRINCIPAL -->
         <header class='header-principal navbar-fixed'>
             <nav class="blue-grey darken-4">
+
                 <div class="nav-wrapper contenedor">
                     <a href="<?php echo home_url(); ?>" class="mbrand center-align">
                         <img class="responsive-img logo" src="<?php echo get_template_directory_uri().'/images/andrew.png'; ?>" >
                         Codelapps
                     </a>
                     <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                    <a class="right mobile-search" href="#" onclick="buscar(event)"><i class="material-icons">search</i></a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#"><i class="material-icons" onclick="buscar(event)">search</i></a></li>
+                    </ul>
+
                     <?php
                         // argumentos para desplegar el menu
                         $args= array(
@@ -29,9 +36,23 @@
                         // imprime el menu
                         wp_nav_menu($args);
                     ?>
+
                 </div>
             </nav>
+            
         </header>
+        <!-- SEARCH -->
+        <div class="contenedor mt1" id="buscador">
+            <form role="search" method="get" id="searchform"  action="<?php echo home_url(); ?>">
+                <div class="input-field">
+                    <input id="s" type="search" name="s" class="input-search" placeholder="Buscar..." required >
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons search-close">close</i>
+                </div>
+            </form>
+        </div>
+        
+        
         <!-- MENU MOVIL -->
         <?php
             // argumentos para desplegar el menu
@@ -44,5 +65,6 @@
             // imprime el menu
             wp_nav_menu($args);
         ?>
+        
         <!-- SECCION PARA EL CONTENIDO PRINCIPAL -->
         <section class="main contenedor">  
