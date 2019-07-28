@@ -33,12 +33,12 @@
     ?> 
 </div> 
 <!-- PAGINATION -->
-<div class="row">
-        <div class="col s12 center-align">
-            <?php
-                paginate($return_posts);
-            ?>
-        </div>
+<div class="row mt2 mb2">
+    <div class="col s12 center-align">
+        <?php
+            paginate($return_posts);
+        ?>
+    </div>
 </div>
 
 <?php

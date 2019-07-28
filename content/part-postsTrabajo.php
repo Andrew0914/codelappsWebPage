@@ -8,8 +8,8 @@ function postsTrabajo($number_posts,$options) {
 	<div class="<?php echo isset($options['layout_class']) ? $options['layout_class'] : ''; ?>">
 		<div class="<?php echo isset($options['container_class']) ? $options['container_class'] : ''; ?>">
 			<div class="<?php echo isset($options['inner_class']) ? $options['inner_class'] : ''; ?>">
-				<h5 class="<?php echo $options['title_class']?>">
-					<?php the_title(); ?>
+				<h5 class="<?php echo $options['title_class']?> card-title mt0">
+					<b><?php the_title(); ?></b>
 				</h5>
 				<div class="chip chip-sm">
 					<small>

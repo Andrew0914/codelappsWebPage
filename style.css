@@ -66,6 +66,10 @@ Text Domain: http://www.codelapps.com
     margin-bottom: 1em !important;
 }
 
+.mb2 {
+    margin-bottom: 2em !important;
+}
+
 .mb5 {
     margin-bottom: 5em !important;
 }
@@ -215,4 +219,21 @@ Text Domain: http://www.codelapps.com
 
 .btn-close {
     cursor: pointer;
+}
+
+
+/*** PAGINATION ***/
+
+.page-numbers {
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+
+.page-numbers.current {
+    background-color: #f57f17 !important;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
