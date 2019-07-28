@@ -7,16 +7,21 @@
     <div class="card-content">
         <!-- TITLE -->
         <span class="card-title">
-            <b><?php the_title(); ?></b>
-
-            <?php if( get_field('tipo_desarrollo') ){ ?>
-            <div class="chip big-text">
-                <small>
-                    <?php the_field('tipo_desarrollo'); ?>
-                </small>
+            <div class="row">
+                <div class="col m10 s12">
+                    <b><?php the_title(); ?></b>
+                    <?php if( get_field('tipo_desarrollo') ){ ?>
+                    <div class="chip chip-sm big-text">
+                        <small>
+                            <?php the_field('tipo_desarrollo'); ?>
+                        </small>
+                    </div>
+                    <?php } ?>
+                </div>
+                <div class="col m2 s12">
+                    <?php the_post_thumbnail('' ,['class' => 'responsive-img materialboxed'])?>
+                </div>
             </div>
-            <?php } ?>
-
         </span>
         <!-- CONTENT -->
         <?php the_content(); ?>

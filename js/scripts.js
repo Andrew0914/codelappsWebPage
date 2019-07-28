@@ -38,6 +38,8 @@ $(document).ready(function() {
     // collapsible
     $('.collapsible').collapsible();
 
+    $('.materialboxed').materialbox();
+
 });
 
 function closeThis(whatThis) {
