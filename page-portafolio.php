@@ -18,7 +18,7 @@
 <!-- trabajos -->
 <div class="row">
     <?php
-        $return_posts = postsTrabajo(3,[
+        $return_posts = postsTrabajo(6,[
             'layout_class' => 'col l4 m4 s12',
             'container_class' => 'card z-depth-2',
             'inner_class' => 'card-content',
