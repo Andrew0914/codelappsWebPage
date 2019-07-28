@@ -49,4 +49,4 @@ function postsBlog($number_posts,$options) {
     
     <?php endwhile; wp_reset_postdata(); ?>
     
-<?php } ?>
+<?php return $posts; } ?>
