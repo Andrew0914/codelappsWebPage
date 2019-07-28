@@ -66,6 +66,10 @@ Text Domain: http://www.codelapps.com
     margin-bottom: 1em !important;
 }
 
+.mb5 {
+    margin-bottom: 5em !important;
+}
+
 .pt1 {
     padding-top: 1em;
 }
@@ -187,6 +191,10 @@ Text Domain: http://www.codelapps.com
     font-size: 20px;
 }
 
+.mega-text {
+    font-size: 24px;
+}
+
 .justify {
     text-align: justify;
 }
@@ -203,4 +211,8 @@ Text Domain: http://www.codelapps.com
     padding: 0px 8px !important;
     height: 16px !important;
     color: #212121;
+}
+
+.btn-close {
+    cursor: pointer;
 }

@@ -37,4 +37,9 @@ $(document).ready(function() {
 
     // collapsible
     $('.collapsible').collapsible();
+
 });
+
+function closeThis(whatThis) {
+    $(whatThis).slideUp(500);
+}

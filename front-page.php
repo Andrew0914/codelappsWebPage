@@ -4,20 +4,30 @@
     include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
     get_header();
 ?>
-<div class="card mt1 z-depth-2">
-    <div class="card-content">
-        <div class="row">
-        <?php while(have_posts()): the_post(); ?>  
-            <div class="col s12 m7">
-                <?php the_content(); ?>
+
+<!-- LAST NEW -->
+<div class="row" id="last-new">
+    <div class="col s12">
+        <div class="card light-blue lighten-2">
+            <div class="card-content white-text big-text roboto">
+                <i class="fas fa-star"></i> El titulo de la ultima publicacion <a href="." class='blue-text text-darken-4'><u>Ver publicación</u></a>
+                <i class="fas fa-times right btn-close" onclick="closeThis($('#last-new'))"></i>
             </div>
-            <div class="col s12 m5 center-align">
-                <?php the_post_thumbnail('256px2',array('class' => 'responsive-img rounded animated zoomIn'))?>
-            </div>
-        <?php endwhile; ?>
         </div>
     </div>
 </div>
+
+<!-- HOME CONTENT-->
+<div class="mt1 mb5">
+    <div class="row">
+    <?php while(have_posts()): the_post(); ?>  
+        <div class="col s12 center-align">
+            <?php the_content(); ?>
+        </div>
+    <?php endwhile; ?>
+    </div>
+</div>
+
 <!-- ULTIMO DEVELOPER -->
 <h3 class="grey-text text-darken-2 noto">
     Developer
