@@ -8,7 +8,7 @@
 <!-- LAST NEW -->
 <div class="row" id="last-new">
     <div class="col s12">
-        <div class="card light-blue lighten-2">
+        <div class="card light-blue lighten-1">
             <div class="card-content white-text big-text roboto ">
                 <?php
                     $last_new = getPosts(1, array('code','post','trabajo'));
@@ -23,14 +23,13 @@
 </div>
 
 <!-- HOME CONTENT-->
-<div class="mt1 mb5">
-    <div class="row">
-    <?php while(have_posts()): the_post(); ?>  
-        <div class="col s12 center-align">
-            <?php the_content(); ?>
-        </div>
-    <?php endwhile; ?>
+
+<div class="row mt1 mb5">
+<?php while(have_posts()): the_post(); ?>  
+    <div class="col s12 center-align">
+        <?php the_content(); ?>
     </div>
+<?php endwhile; ?>
 </div>
 
 <!-- ULTIMO DEVELOPER -->

@@ -21,7 +21,7 @@
         
 
         // registramos js´s
-        wp_register_script('materialjs','https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js', array(), '1.0.0',true);
+        wp_register_script('materialjs','https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js', array('jquery'), '1.0.0',true);
         wp_register_script('scripts',get_template_directory_uri() . '/js/scripts.js', array('materialjs','jquery'), '1.0.0',true);
         wp_register_script('sendmail',get_template_directory_uri() . '/js/sendMail.js', array('materialjs','jquery'), '1.0.0',true);
         // agregamos
@@ -140,4 +140,14 @@
     }
 
     add_action('init', 'cp_posts_code');
+
+    function wpb_tags() { 
+        $wpbtags =  get_tags();
+        $tags = "";
+        foreach ($wpbtags as $tag) { 
+            $tags .= '<div class="chip blue-grey darken-3"><a class="taglink white-text" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a></div>';
+        } 
+        return $tags;
+    } 
+    add_shortcode('wpbtags' , 'wpb_tags' );
 ?>
