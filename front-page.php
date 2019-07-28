@@ -1,7 +1,7 @@
 <?php
     include_once TEMPLATEPATH . '/content/part-postsDeveloper.php'; 
     include_once TEMPLATEPATH . '/content/part-postsBlog.php'; 
-    include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
+    include_once TEMPLATEPATH . '/content/part-postsTrabajo.php';
     get_header();
 ?>
 
@@ -9,8 +9,13 @@
 <div class="row" id="last-new">
     <div class="col s12">
         <div class="card light-blue lighten-2">
-            <div class="card-content white-text big-text roboto">
-                <i class="fas fa-star"></i> El titulo de la ultima publicacion <a href="." class='blue-text text-darken-4'><u>Ver publicación</u></a>
+            <div class="card-content white-text big-text roboto ">
+                <?php
+                    $last_new = getPosts(1, array('code','post','trabajo'));
+                    while ($last_new->have_posts()) : $last_new->the_post();
+                ?>
+                <i class="fas fa-star"></i> <?php the_title(); ?> <a href="<?php the_permalink(); ?>" class='blue-text text-darken-4'><u>Ver publicación</u></a>
+                <?php endwhile; wp_reset_postdata(); ?>
                 <i class="fas fa-times right btn-close" onclick="closeThis($('#last-new'))"></i>
             </div>
         </div>
