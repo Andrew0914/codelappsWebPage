@@ -141,12 +141,14 @@
 
     add_action('init', 'cp_posts_code');
 
-    function wpb_tags() { 
-        $wpbtags =  get_tags();
+    function wpb_tags($id) { 
+        $wpbtags =  get_the_tags($id);
         $tags = "";
-        foreach ($wpbtags as $tag) { 
-            $tags .= '<div class="chip blue-grey darken-3"><a class="taglink white-text" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a></div>';
-        } 
+        if($wpbtags){
+            foreach ($wpbtags as $tag) { 
+                $tags .= '<div class="chip blue-grey darken-3"><a class="taglink white-text" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a></div>';
+            }
+        }
         return $tags;
     } 
     add_shortcode('wpbtags' , 'wpb_tags' );

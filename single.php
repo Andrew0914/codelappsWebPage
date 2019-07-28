@@ -70,7 +70,7 @@
     <h4 class="big-text">
         Tags:
     </h4>
-    <?php echo wpb_tags(); ?>
+    <?php echo wpb_tags(get_the_ID()); ?>
 </div>
 
 
