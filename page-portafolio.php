@@ -32,14 +32,14 @@
         
     ?> 
 </div> 
-
+<!-- PAGINATION -->
 <div class="row">
         <div class="col s12 center-align">
             <?php
                 paginate($return_posts);
             ?>
         </div>
-    </div>
+</div>
 
 <?php
     get_footer();
