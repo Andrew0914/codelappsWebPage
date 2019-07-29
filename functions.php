@@ -152,4 +152,16 @@
         return $tags;
     } 
     add_shortcode('wpbtags' , 'wpb_tags' );
+
+    function searchfilter($query) {
+ 
+        if ($query->is_search && !is_admin() ) {
+            //$query->set('post_type',array('post','page'));
+            $query->set('posts_per_page', 8);
+        }
+     
+        return $query;
+    }
+     
+    add_filter('pre_get_posts','searchfilter');
 ?>
