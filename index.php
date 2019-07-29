@@ -7,10 +7,7 @@
 <div class="row fadeIn">
 
     <div class="col s12 center-align">
-        <?php while(have_posts()): the_post(); ?>
-            <h2 class="noto"><?php the_title(); ?></h2>
-            <?php the_content(); ?>
-        <?php endwhile; ?>
+        <h2 class="noto">BLOG</h2>
     </div>
 
 </div>
