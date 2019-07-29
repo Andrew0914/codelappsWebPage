@@ -101,7 +101,7 @@
                 foreach($post_categories as $categoryId){
                     $category = get_category( $categoryId );
             ?>
-            <a href="/<?php echo $category->slug; ?>" class="breadcrumb roboto"><b><?php echo $category->name; ?></b></a>
+            <a href="/category/<?php echo $category->slug; ?>" class="breadcrumb roboto"><b><?php echo $category->name; ?></b></a>
             <?php } ?>
         </div>
     </div>
