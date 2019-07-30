@@ -60,7 +60,7 @@
             </div>
         </div>
 
-
+        <a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>">Facebook</a>
        
     </div>
 
