@@ -20,6 +20,7 @@ $(document).ready(function() {
             $(el).addClass('light-blue darken-4');
             $(el).html('<i class="fab fa-facebook fa-2x"></i>');
         }
+        $(el).attr("target", "_blank");
     });
 
     // active menu
