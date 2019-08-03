@@ -68,6 +68,7 @@
                 </div>
             </div>
             <?php wp_footer(); ?>
+            <div id="fb-root"></div>
         </footer>
         </section>
         <!-- Element Showed -->
