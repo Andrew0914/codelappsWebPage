@@ -5,6 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:url"           content="https://www.codelapps.com/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Codelapps" />
+        <meta property="og:description"   content="El blog de un programador" />
         <?php
             wp_head();
         ?>
