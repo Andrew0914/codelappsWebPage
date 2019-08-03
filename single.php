@@ -60,8 +60,13 @@
             </div>
         </div>
 
-        <a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>">Facebook</a>
-       
+        <div class="fb-share-button" data-href="<?php echo get_the_permalink() ?>" data-layout="button_count" data-size="large">
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodelapps.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                Compartir
+            </a>
+        </div>
+        
+    
     </div>
 
      <!-- ACTIONS -->
