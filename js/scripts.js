@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     $('.materialboxed').materialbox();
 
-    $('.tap-target').tapTarget()
+    $('.tap-target').tapTarget();
 
 });
 
