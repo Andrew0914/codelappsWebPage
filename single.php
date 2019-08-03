@@ -88,16 +88,17 @@
 </div>
 
 <!--SOCIAL NETWORKS -->
-<h4 class="noto mt1 big-text">Ayudame a compartir</h4>
-<div class="row mt1">
-    <div class="col m2 s12">
+<h4 class="noto mt3 big-text">Ayudame a compartir este post</h4>
+<div class="row mt1 pl0">
+    <div class="col m2 s12 pl0 mt1">
         <div class="fb-share-button" data-href="<?php echo get_the_permalink() ?>" data-layout="button_count" data-size="large">
             <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodelapps.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
                 Compartir
             </a>
         </div>
+        <div class="fb-like mt03" data-href="https://www.facebook.com/AndrewGMx/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
     </div>
-    <div class="col m2 s12">
+    <div class="col m3 s12 pl0 mt1">
         <?php 
             $tags = "";
             foreach(get_tags() as $tag){
@@ -107,13 +108,13 @@
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="<?php echo get_the_title(); ?>" data-url="<?php echo get_the_permalink(); ?>" data-hashtags="<?php echo $tags; ?>" data-show-count="true">
             Tweet
         </a>
+        <a href="https://twitter.com/Andrew_GMx?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @Andrew_GMx</a>
     </div>
 </div>
 
-
  <!-- CATEGORIES -->
  <h4 class="big-text">
-    Categories:
+    Categories
 </h4>
  <nav class="row">
     <div class="nav-wrapper z-depth-2 mb1 blue-grey darken-3">
@@ -131,7 +132,7 @@
 
 <div class="row">
     <h4 class="big-text">
-        Tags:
+        Tags
     </h4>
     <?php echo wpb_tags(get_the_ID()); ?>
 </div>

@@ -50,6 +50,10 @@ Text Domain: http://www.codelapps.com
     margin-top: 0 !important;
 }
 
+.mt03 {
+    margin-top: 0.3em !important;
+}
+
 .mt2 {
     margin-top: 2em !important;
 }
@@ -80,6 +84,14 @@ Text Domain: http://www.codelapps.com
 
 .pb4 {
     padding-bottom: 4.5em !important;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.pl0 {
+    padding-left: 0 !important;
 }
 
 .card-action a {
