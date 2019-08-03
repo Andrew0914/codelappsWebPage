@@ -25,6 +25,8 @@
         wp_register_script('scripts',get_template_directory_uri() . '/js/scripts.js', array('materialjs','jquery'), '1.0.0',true);
         wp_register_script('sendmail',get_template_directory_uri() . '/js/sendMail.js', array('materialjs','jquery'), '1.0.0',true);
         wp_register_script('sharedfb','https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0&appId=130494100936172&autoLogAppEvents=1',[] , '1.0.0',true);
+        wp_register_script('sharedtweet','https://platform.twitter.com/widgets.js',[] , '1.0.0',true);
+        
    
         // agregamos
         wp_enqueue_script("jquery");
@@ -32,6 +34,7 @@
         wp_enqueue_script("scripts");
         wp_enqueue_script("sendmail");
         wp_enqueue_script("sharedfb");
+        wp_enqueue_script("sharedtweet");
     }
 
     // registramos los scripts de estilo y js
@@ -175,9 +178,13 @@
 
 
     function add_share_fb_attr($tag, $handle){
-        if ($handle != 'sharedfb') 
-            return $tag;
+        if ($handle === 'sharedfb') 
             return str_replace( ' src', ' async defer crossorigin="anonymous" src', $tag );
+        else if($handle == 'sharedtweet')
+            return str_replace( ' src', ' acharset="utf-8" src', $tag );
+        else
+            return $tag;
+            
     }
 
     add_filter('script_loader_src','add_share_fb_attr',10,2);

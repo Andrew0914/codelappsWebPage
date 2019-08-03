@@ -59,6 +59,8 @@
             ?>
             </div>
         </div>
+        
+        <!--SOCIAL NETWORKS -->
 
         <div class="fb-share-button" data-href="<?php echo get_the_permalink() ?>" data-layout="button_count" data-size="large">
             <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodelapps.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
@@ -66,7 +68,16 @@
             </a>
         </div>
         
-    
+        <?php 
+            $tags = "";
+            foreach(get_tags() as $tag){
+                $tags .= $tag->slug .',';
+            }
+        ?>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="<?php echo get_the_title(); ?>" data-url="<?php echo get_the_permalink(); ?>" data-hashtags="<?php echo $tags; ?>" data-show-count="true">
+            Tweet
+        </a>
+
     </div>
 
      <!-- ACTIONS -->
