@@ -40,7 +40,7 @@ function postsTrabajo($number_posts,$options) {
 				<?php } ?>
 				
 				<?php if (get_field('enlace')) { ?>
-					<a href="<?php the_field('enlace'); ?>" class="tooltipped <?php echo isset($options['enlace_class']) ? $options['enlace_class'] : ''; ?>" data-position="right" data-tooltip="demo">
+					<a target="_blank" href="<?php the_field('enlace'); ?>" class="tooltipped <?php echo isset($options['enlace_class']) ? $options['enlace_class'] : ''; ?>" data-position="right" data-tooltip="demo">
 						<i class="fas fa-external-link-alt"></i>
 					</a>
 				<?php } ?>
