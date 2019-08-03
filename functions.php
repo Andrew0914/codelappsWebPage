@@ -152,4 +152,21 @@
         return $tags;
     } 
     add_shortcode('wpbtags' , 'wpb_tags' );
+
+    function searchfilter($query) {
+ 
+        if ($query->is_search && !is_admin() ) {
+            $query->set('posts_per_page', 8);
+        }
+
+        if ( $query->is_main_query()
+            && ( $query->is_category() || $query->is_tag() ) ) {
+                $query->set( 'post_type', array( 'post', 'code' , 'trabajo' ) );
+                $query->set('posts_per_page', 8);
+        }
+     
+        return $query;
+    }
+     
+    add_filter('pre_get_posts','searchfilter');
 ?>

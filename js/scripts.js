@@ -40,8 +40,15 @@ $(document).ready(function() {
 
     $('.materialboxed').materialbox();
 
+    $('.tap-target').tapTarget()
+
 });
 
 function closeThis(whatThis) {
     $(whatThis).slideUp(500);
+}
+
+function buscar(event) {
+    event.preventDefault();
+    $("#buscador").slideDown(500);
 }
