@@ -101,7 +101,7 @@
     <div class="col m3 s12 pl0 mt1">
         <?php 
             $tags = "";
-            foreach(get_tags() as $tag){
+            foreach(get_the_tags(get_the_ID()) as $tag){
                 $tags .= $tag->slug .',';
             }
         ?>
