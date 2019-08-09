@@ -83,8 +83,10 @@
             'supports' => array(
                 'title',
                 'editor',
-                'thumbnail'
-            ), 
+                'thumbnail',
+                'excerpt'
+            ),
+            'show_in_rest' => true,
             'can_export' => true, 
             'taxonomies' => array(
                 'post_tag','category'
@@ -135,8 +137,10 @@
             'supports' => array(
                 'title',
                 'editor',
-                'thumbnail'
-            ), 
+                'thumbnail',
+                'excerpt'
+            ),
+            'show_in_rest' => true,
             'can_export' => true, 
             'taxonomies' => array(
                 'post_tag','category'
