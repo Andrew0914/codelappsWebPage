@@ -3,7 +3,7 @@
 ?>
 
 <?php while(have_posts()): the_post(); ?>  
-<div class="card mt1 z-depth-2">
+<div class="card mt1 z-depth-2 animated fadeIn">
     <div class="card-content">
 
         <!-- TITLE -->

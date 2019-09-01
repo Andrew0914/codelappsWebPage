@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn">
     <div class="col s12 center-align">
         <h1 class="grey-text text-darken-3">
             Sin Resultados

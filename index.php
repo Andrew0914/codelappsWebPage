@@ -4,7 +4,7 @@
     get_header();
 ?>     
 <!-- MAIN -->   
-<div class="row fadeIn">
+<div class="row animated fadeIn">
 
     <div class="col s12 center-align">
         <h2 class="noto">BLOG</h2>
@@ -13,7 +13,7 @@
 </div>
 
 <!-- BLOG posts -->
-<div class="row">
+<div class="row animated fadeIn">
     <?php
 
         $return_posts = postsBlog(12,[

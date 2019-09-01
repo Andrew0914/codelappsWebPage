@@ -4,7 +4,7 @@
     get_header();
 ?>     
 <!-- MAIN -->   
-<div class="row fadeIn">
+<div class="row animated fadeIn">
 
     <div class="col s12 center-align">
         <?php while(have_posts()): the_post(); ?>
@@ -16,7 +16,7 @@
 </div>
 
 <!-- trabajos -->
-<div class="row">
+<div class="row animated fadeIn">
     <?php
         $return_posts = postsTrabajo(6,[
             'layout_class' => 'col l4 m4 s12',

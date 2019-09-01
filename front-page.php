@@ -24,7 +24,7 @@
 
 <!-- HOME CONTENT-->
 
-<div class="row mt1 mb5">
+<div class="row mt1 mb5 animated fadeIn">
 <?php while(have_posts()): the_post(); ?>  
     <div class="col s12 center-align">
         <?php the_content(); ?>
