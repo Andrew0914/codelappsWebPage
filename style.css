@@ -25,6 +25,13 @@ Text Domain: http://www.codelapps.com
     text-rendering: optimizeLegibility;
 }
 
+html,
+body {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 
 /********** HACKS STYLES *********/
 
