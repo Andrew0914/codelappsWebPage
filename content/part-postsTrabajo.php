@@ -3,9 +3,12 @@ include_once TEMPLATEPATH . '/services/getPosts.php';
 
 function postsTrabajo($number_posts,$options) {
 	$trabajos = getPosts($number_posts, 'trabajo');
+	$items = 0;
 	while ($trabajos->have_posts()) : $trabajos->the_post();
+		$items+= 1;
 	?>
-	<div class="<?php echo isset($options['layout_class']) ? $options['layout_class'] : ''; ?>">
+	<div class="<?php echo isset($options['layout_class']) ? $options['layout_class'] : ''; ?>" 
+		style="<?php echo isset($options['float-right']) && $items>3  ? 'float: right' : ''; ?>" >
 		<div class="<?php echo isset($options['container_class']) ? $options['container_class'] : ''; ?>">
 			<div class="<?php echo isset($options['inner_class']) ? $options['inner_class'] : ''; ?>">
 				<h5 class="<?php echo $options['title_class']?> card-title mt0">
