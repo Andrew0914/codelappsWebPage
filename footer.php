@@ -61,7 +61,7 @@
             <!-- COPYRIGHT Y ENLACES DE INTERES -->
             <div class="row footer-copyright">
                 <div class="col s12">
-                    © 2019 Copyright Andrew Alan Gonzalez - v1.0.3
+                    © 2019 Copyright Andrew Alan Gonzalez - v1.0.4
                     <a class="white-text right" href="https://github.com/Andrew0914">
                         Visita mi GitHub <i class="fab fa-github"></i>
                     </a>
