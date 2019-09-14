@@ -48,6 +48,7 @@
             'short_class' => 'mt1 roboto',
             'has_content' => false,
             'more'=>'true',
+            'float-right'=> true
         ]);
     ?>
 </div>
