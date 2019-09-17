@@ -19,8 +19,8 @@ $(document).ready(function() {
         } else if (enlace.includes('facebook')) {
             $(el).addClass('light-blue darken-4');
             $(el).html('<i class="fab fa-facebook fa-2x"></i>');
-        } else if (enlace.includes('email')) {
-            $(el).addClass('yelow darken-4');
+        } else if (enlace.includes('@')) {
+            $(el).addClass('yellow darken-4');
             $(el).html('<i class="far fa-envelope fa-2x"></i>');
         }
         $(el).attr("target", "_blank");

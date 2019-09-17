@@ -109,12 +109,6 @@ body {
     border-radius: 0.2em;
 }
 
-.wp-block-image .alignleft,
-.wp-block-image .alignright {
-    float: none !important;
-    margin: 0 auto !important;
-}
-
 
 /********* MAIN STYLES *********/
 
@@ -132,6 +126,11 @@ body {
         margin: 0 auto;
         max-width: 100%;
         width: 100%;
+    }
+    .wp-block-image .alignleft,
+    .wp-block-image .alignright {
+        float: none !important;
+        margin: 0 auto !important;
     }
 }
 
