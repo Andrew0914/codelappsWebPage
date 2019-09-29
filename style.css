@@ -109,6 +109,14 @@ body {
     border-radius: 0.2em;
 }
 
+h2 {
+    margin: 1rem 0 !important;
+}
+
+.pl1 {
+    padding-left: 1em;
+}
+
 
 /********* MAIN STYLES *********/
 
@@ -194,6 +202,16 @@ body {
     .wp-block-gallery .blocks-gallery-item {
         width: auto;
     }
+}
+
+.frame figure {
+    padding: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 0.2em;
+}
+
+.frame figure img {
+    border-radius: 0.2em;
 }
 
 
@@ -300,4 +318,42 @@ body {
     #buscador form {
         width: 100%;
     }
+}
+
+
+/********* TABLES *********/
+
+@media only screen and (max-width: 768px) {
+    .minimal-table tbody tr td:nth-child(even) {
+        display: none !important;
+    }
+}
+
+
+/********* LIST ********/
+
+.list {
+    text-align: justify;
+}
+
+ul.list.education {
+    list-style-image: url("http://codelapps.com/wp-content/uploads/2019/09/002-graduation.png");
+    padding: 16px;
+}
+
+ul.list.laboral {
+    list-style-image: url("http://codelapps.com/wp-content/uploads/2019/09/001-briefcase.png");
+    padding: 16px;
+}
+
+ul.list.laboral ul {
+    list-style: none !important;
+}
+
+.list li {
+    padding: 10px 0px;
+}
+
+.list ul {
+    margin-left: 20px;
 }
