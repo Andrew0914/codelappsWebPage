@@ -121,6 +121,7 @@ h2 {
 
 .contenedor {
     width: 70%;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -186,6 +187,11 @@ h2 {
 
 
 /********** img *********/
+
+.rounded, .rounded img {
+    border-radius: 100%;
+}
+
 
 .rounded {
     border-radius: 100%;
@@ -282,6 +288,7 @@ h2 {
 
 /** BUSCADOR ****/
 
+
 #buscador {
     display: none;
     position: relative;
@@ -304,6 +311,8 @@ h2 {
 .input-search {
     padding-left: 30px !important;
     font-size: 18px !important;
+    border-bottom: none !important;
+    border-radius: 3px;
 }
 
 .search-close {

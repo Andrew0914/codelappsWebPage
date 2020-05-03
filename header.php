@@ -16,7 +16,6 @@
 
                 <div class="nav-wrapper contenedor">
                     <a href="<?php echo home_url(); ?>" class="mbrand center-align">
-                        <img class="responsive-img logo" src="<?php echo get_template_directory_uri().'/images/andrew.png'; ?>" >
                         Codelapps
                     </a>
                     <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
