@@ -3,7 +3,7 @@
     $last_new = getPosts(1, array('code', 'post', 'trabajo'));
     while ($last_new->have_posts()) : $last_new->the_post();
     ?>
-        <div class="card horizontal blue-grey darken-1">
+        <div class="card horizontal blue-grey darken-1 test">
             <div class="card-image">
                 <?php the_post_thumbnail('medium'); ?>
             </div>
