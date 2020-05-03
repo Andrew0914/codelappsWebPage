@@ -6,9 +6,10 @@ global $wp_query;
 ?>
 <div class="row">
 <div class="col s12">
-    <h4 class="noto">
-        <?php the_archive_title(); ?>
-    </h4>
+    <h3 class="noto grey-text text-darken-3">
+        <?php the_archive_title(); ?> 
+    </h3>
+
 </div>
 <?php
 while($wp_query->have_posts()) : the_post();

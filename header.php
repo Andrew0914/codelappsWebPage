@@ -44,9 +44,9 @@
         <div class="contenedor mt1" id="buscador">
             <form role="search" method="get" id="searchform"  action="<?php echo home_url(); ?>">
                 <div class="input-field">
-                    <input id="s" type="search" name="s" class="input-search white" placeholder="Buscar..." required >
+                    <input id="s" type="search" name="s" class="input-search white z-depth-5" placeholder="Buscar..." required >
                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons search-close">close</i>
+                    <i class="material-icons search-close" onclick="closeThis('#buscador')">close</i>
                 </div>
             </form>
         </div>
