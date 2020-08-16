@@ -156,7 +156,7 @@
         $tags = "";
         if($wpbtags){
             foreach ($wpbtags as $tag) { 
-                $tags .= '<div class="chip blue-grey darken-3"><a class="taglink white-text" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a></div>';
+                $tags .= '<div class="chip blue-grey darken-3"><a class="taglink teal-text text-accent-3" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a></div>';
             }
         }
         return $tags;
