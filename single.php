@@ -12,8 +12,9 @@ get_header();
         <div class="col s12">
           <span class="card-title">
             <div class="row">
-              <div class="col m10 s12">
+              <div class="col m12 s12">
                 <h3><?php the_title(); ?></h3>
+                <h4 class="noto grey-text text-darken-3"><?php the_field('subtitulo'); ?></h4>
                 <div class="author">
                   <img src="<?php echo get_avatar_url($author_id);?>" alt="" width="48" height="48">
                   <div class="author_info">
@@ -34,9 +35,6 @@ get_header();
                     </small>
                   </div>
                 <?php } ?>
-              </div>
-              <div class="col m2 s12">
-                <?php the_post_thumbnail('', ['class' => 'responsive-img materialboxed']) ?>
               </div>
             </div>
           </span>
