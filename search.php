@@ -20,7 +20,7 @@ if($total_results > 0){
 while(have_posts()) : the_post();
 ?>
 
-    <div class="col s12 m3">
+    <div class="col s12 m4">
         <div class="card">
             <?php the_post_thumbnail('', array('class' => 'responsive-img')); ?>
             <div class="card-content">

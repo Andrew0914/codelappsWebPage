@@ -7,7 +7,7 @@
             <div class="row">
                 <!-- PREVIEW ACERCA DE -->
                 <div class="col l4 m12 s12">
-                <h4 class="amber-text text-accent-3">
+                <h4 class="noto">
                     Acerca de 
                 </h4>
                     <?php
@@ -21,7 +21,7 @@
                 </div>
                 <!-- PREVIEW DEVELOPER -->
                 <div class="col l4 m12 s12">
-                    <h4 class="amber-text text-accent-3 noto">
+                    <h4 class="noto">
                         Lo último developer
                     </h4>
                     <?php
@@ -40,7 +40,7 @@
                 </div>
                 <!-- PREVIRE PORTAFOLIO -->
                 <div class="col l4 m12 s12">
-                    <h4 class="amber-text text-accent-3 noto">
+                    <h4 class="noto">
                             Lo último portafolio
                     </h4>
                     <?php

@@ -17,9 +17,9 @@
     <?php
 
         $return_posts = postsBlog(12,[
-            'layout_class' => 'col l3 m3 s12 ',
-            'container_class' => 'card z-depth-2 grey darken-4',
-            'inner_class' => 'card-content white-text',
+            'layout_class' => 'col l4 m4 s12 ',
+            'container_class' => 'card z-depth-2',
+            'inner_class' => 'card-content',
             'title_class' =>'card_title activator noto',
             'content_class' => 'roboto',
             'actions' => true,

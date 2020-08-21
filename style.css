@@ -413,3 +413,17 @@ ul.list.laboral ul {
   flex-flow: column;
   margin-left: 16px;
 }
+
+
+.default_list{
+  padding-left: 24px !important;
+}
+
+.default_list li {
+  list-style: disc;
+  list-style-type: disc !important;
+}
+
+strong{
+  font-weight: 700;
+}
