@@ -19,7 +19,7 @@
 <div class="row animated fadeIn">
     <?php
         $return_posts = postsDevelopers(6,[
-            'layout_class' => 'col l6 m6 s12',
+            'layout_class' => 'col l4 m4 s12',
             'container_class' => 'card z-depth-2',
             'inner_class' => 'card-content',
             'title_class' =>'card_title noto',
