@@ -29,7 +29,7 @@ get_template_part('content/part', 'lastNew');
 </h3>
 <div class="row">
   <?php
-  postsDevelopers(4, [
+  postsDevelopers(6, [
     'layout_class' => 'col l4 m4 s12',
     'container_class' => 'card z-depth-2',
     'inner_class' => 'card-content',
