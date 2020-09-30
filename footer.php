@@ -3,11 +3,11 @@
     include_once TEMPLATEPATH . '/content/part-postsTrabajo.php'; 
 ?>
 <!-- FOOTER PRINCIPAL DEL SITIO -->
-        <footer class="page-footer blue-grey darken-4 z-depth-1 round1">
+        <footer class="page-footer teal darken-1 z-depth-1 round1">
             <div class="row">
                 <!-- PREVIEW ACERCA DE -->
                 <div class="col l4 m12 s12">
-                <h4 class="noto">
+                <h4 class="white-text text-darken-4">
                     Acerca de 
                 </h4>
                     <?php
@@ -21,7 +21,7 @@
                 </div>
                 <!-- PREVIEW DEVELOPER -->
                 <div class="col l4 m12 s12">
-                    <h4 class="noto">
+                    <h4 class="white-texttext-darken-4 noto">
                         Lo último developer
                     </h4>
                     <?php
@@ -40,7 +40,7 @@
                 </div>
                 <!-- PREVIRE PORTAFOLIO -->
                 <div class="col l4 m12 s12">
-                    <h4 class="noto">
+                    <h4 class="white-text text-darken-4 noto">
                             Lo último portafolio
                     </h4>
                     <?php
@@ -61,7 +61,7 @@
             <!-- COPYRIGHT Y ENLACES DE INTERES -->
             <div class="row footer-copyright">
                 <div class="col s12">
-                    © 2020 Copyright Andrew Alan Gonzalez - v1.3.1
+                    © 2019 Copyright Andrew Alan Gonzalez - v1.2.6
                     <a class="white-text right" href="https://github.com/Andrew0914">
                         Visita mi GitHub <i class="fab fa-github"></i>
                     </a>

@@ -3,8 +3,8 @@
     $last_new = getPosts(1, array('code', 'post', 'trabajo'));
     while ($last_new->have_posts()) : $last_new->the_post();
     ?>
-        <div class="card horizontal blue-grey darken-4">
-            <div class="card-image">
+        <div class="card horizontal blue-grey darken-3">
+            <div class="card-image" style="display: inline-flex;align-self: center;">
                 <?php the_post_thumbnail('medium'); ?>
             </div>
             <div class="card-stacked">

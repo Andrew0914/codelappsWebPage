@@ -14,10 +14,10 @@
 <body class="grey lighten-4">
     <!-- MENU PRINCIPAL -->
     <header class='header-principal navbar-fixed'>
-        <nav class="indigo darken-2">
+        <nav class="blue-grey darken-4">
 
             <div class="nav-wrapper contenedor">
-                <a href="<?php echo home_url(); ?>" class="mbrand center-align amber-text text-accent-4">
+                <a href="<?php echo home_url(); ?>" class="mbrand center-align amber-text text-lighten-4">
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/coffe.png" width="32" height="32" />Codelapps
                 </a>
                 <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="fas fa-bars"></i></a>

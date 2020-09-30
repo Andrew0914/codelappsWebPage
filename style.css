@@ -414,16 +414,21 @@ ul.list.laboral ul {
   margin-left: 16px;
 }
 
-
-.default_list{
+.default_list {
   padding-left: 24px !important;
 }
 
 .default_list li {
   list-style: disc;
   list-style-type: disc !important;
+  margin-top: 8px;
 }
 
-strong{
+strong {
   font-weight: 700;
+}
+
+.bg_grey {
+  background-color: #dbdbdb;
+  padding: 4px;
 }
